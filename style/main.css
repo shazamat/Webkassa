@@ -74,7 +74,6 @@ header {
     background-color: black;
 }
 
-
 .connect a {
     color: #ffffff;
     font-weight: 500;
@@ -102,12 +101,42 @@ header {
 
 }
 
+.online__container {
+    text-align: center;
+}
 
+.title {
+    text-transform: uppercase;
+    font-size: 50px;
+}
 
+.license {
+    margin: 40px;
+    color: #9F9D9D;
+}
 
+span {
+    background: linear-gradient(94.87deg, #E52FB1 53.59%, #4043BC 84.59%);, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.paragraf {
+    font-size: 21px;
+    padding: 20px 0;
+}
 
+.free {
+    width: 305px;
+    margin-left: 10px;
+}
 
+.free a {
+    color: #000000;
+    font-weight: 500;
+    font-size: 19px;
+    font-family: "Manrope", sans-serif;
+}
 
 
 
