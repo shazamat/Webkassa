@@ -1,0 +1,49 @@
+.header {
+  margin: 30px 20px;
+  @include mobile {
+    margin: 10px;
+    border-radius: 20px;
+  }
+  background: #fff;
+  border-radius: var(--border-radius);
+
+  &__inner {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__second {
+    display: flex;
+    align-items: center;
+  }
+
+  .connect__button {
+    @include button(#fff, #0E0D0D)
+  }
+
+  .private__button {
+    margin-left: 10px;
+    @include button(#000, #F2F1F1)
+  }
+
+  .header__socials-list {
+    gap: 30px;
+    display: flex;
+    margin-right: 60px;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      gap: 60px;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+    }
+  }
+}
