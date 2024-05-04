@@ -63,13 +63,25 @@
                         <a href="#">Личный кабинет</a>
                     </button>
                 </div>
-                <button
-                    class="header__button button burger-button visible-mobile"
-                    type="button"
-                    onclick="mobileOverlay.showModal()"
-                >
-                    <span class="visually-hidden"></span>
-                </button>
+                <div class="header__mobile-btn">
+                    <button
+                            class="header__button button burger-button login__button visible-mobile"
+                            type="button"
+                    >
+                        <a href="#">
+                            <img src="images/user.svg" alt="user">
+                        </a>
+                    </button>
+                    <button
+                            class="header__button button burger-button visible-mobile"
+                            type="button"
+                            onclick="mobileOverlay.showModal()"
+                    >
+                        <a href="#">
+                            <img src="images/menu.svg" alt="menu">
+                        </a>
+                    </button>
+                </div>
             </div>
         </header>
     </div>
@@ -100,5 +112,7 @@
             </ul>
         </div>
     </dialog>
+
+    <script src="script/index.js"></script>
 </body>
 </html>
