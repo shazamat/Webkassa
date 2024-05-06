@@ -426,8 +426,8 @@ a {
   align-items: center;
 }
 .header .connect__button {
-  width: 216px;
-  height: 66px;
+  width: 215px;
+  height: 65px;
   cursor: pointer;
   border: none;
   font-weight: 400;
@@ -437,8 +437,8 @@ a {
 }
 .header .private__button {
   margin-left: 10px;
-  width: 216px;
-  height: 66px;
+  width: 230px;
+  height: 65px;
   cursor: pointer;
   border: none;
   font-weight: 400;
@@ -477,6 +477,95 @@ a {
   display: inline-flex;
   align-items: center;
   height: 48px;
+}
+
+.section {
+  text-align: center;
+}
+.section .hero__licence {
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  .section .hero__licence {
+    color: #9F9D9D;
+    font-size: 1rem;
+  }
+}
+.section .hero__image {
+  margin-top: 60px;
+}
+.section .hero__image img {
+  background-repeat: no-repeat;
+}
+.section .hero__title {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .section .hero__title {
+    font-size: 30px;
+  }
+}
+.section .hero__title span {
+  background: linear-gradient(94.87deg, #E52FB1 53.59%, #4043BC 84.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__button {
+  margin-top: 40px;
+}
+.hero__button-alive {
+  width: 260px;
+  height: 65px;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #000;
+  border-radius: var(--border-radius-small);
+}
+@media (max-width: 767px) {
+  .hero__button-alive {
+    max-width: 410px;
+    margin-inline: auto;
+    width: 100%;
+    height: 65px;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    border-radius: var(--border-radius-small);
+  }
+}
+.hero__button-restart {
+  margin-left: 10px;
+  width: 305px;
+  height: 65px;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  border-radius: var(--border-radius-small);
+}
+@media (max-width: 767px) {
+  .hero__button-restart {
+    margin-top: 10px;
+    max-width: 410px;
+    margin-inline: auto;
+    width: 100%;
+    height: 65px;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    border-radius: var(--border-radius-small);
+  }
 }
 
 .mobile-overlay {

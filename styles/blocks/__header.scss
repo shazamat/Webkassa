@@ -21,12 +21,12 @@
   }
 
   .connect__button {
-    @include button(#fff, #0E0D0D)
+    @include button(215px, 65px, #fff, #0E0D0D)
   }
 
   .private__button {
     margin-left: 10px;
-    @include button(#000, #F2F1F1)
+    @include button(230px, 65px, #000, #F2F1F1)
   }
 
   .header__mobile-btn {
