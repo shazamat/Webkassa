@@ -7,28 +7,5 @@
 
 @import
     "blocks/burger-menu",
-    "blocks/_header";
-
-dialog {
-  z-index: -5;
-  width: 100%;
-  height: 100%;
-  top: 100px;
-  text-align: center;
-  margin: 10px;
-  border: none;
-  border-radius: 20px;
-
-  .menu-overlay__list {
-    display: flex;
-    gap: 40px;
-    padding-top: 40px;
-    flex-direction: column;
-
-    .mobile-overlay__item {
-      font-size: 25px;
-    }
-
-  }
-
-}
+    "blocks/_header",
+    "blocks/_mobile-overlay";
