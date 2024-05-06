@@ -1,0 +1,39 @@
+.section {
+  text-align: center;
+
+  .hero__licence {
+    margin-top: 60px;
+
+    @include mobile {
+      color: #9F9D9D;
+      font-size: 1rem;
+    }
+
+  }
+
+
+  .hero__image {
+    margin-top: 60px;
+    max-width: 100vw;
+
+  }
+
+
+  .hero__title {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    span {
+      background: linear-gradient(94.87deg, #E52FB1 53.59%, #4043BC 84.59%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+}
