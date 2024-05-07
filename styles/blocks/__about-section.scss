@@ -1,0 +1,30 @@
+.section__body {
+
+}
+
+
+.about__content {
+  text-align: center;
+  background: #fff;
+  padding: 5rem 0 2.5rem 0;
+  margin: 5rem 0.625rem 1.25rem 0.625rem;
+  border-radius: var(--border-radius);
+
+  &-title {
+    font-size: 3.15rem;
+    font-weight: 600;
+  }
+
+  &-description {
+    padding-top: 1.25rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.about__content-item {
+  width: 28.43rem;
+  height: 20.5rem;
+
+  background: red;
+  border-radius: var(--border-radius);
+}

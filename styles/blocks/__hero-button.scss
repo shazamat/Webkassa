@@ -1,25 +1,25 @@
 .hero__button {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   &-alive {
-    @include button(260px, 65px, #fff, #000);
+    @include button(16.25rem, 4rem, #fff, #000);
 
     @include mobile {
-      max-width: 410px;
+      max-width: 25.625rem;
       margin-inline: auto;
-      @include button(100%, 65px, #fff, #000)
+      @include button(100%, 4rem, #fff, #000)
     }
 
   }
 
   &-restart {
-    margin-left: 10px;
-    @include button(305px, 65px, #000, #fff);
+    margin-left: 0.625rem;
+    @include button(19rem, 4rem, #000, #fff);
 
     @include mobile {
-      margin-top: 10px;
-      max-width: 410px;
+      margin-top: 0.625rem;
+      max-width: 25.625rem;
       margin-inline: auto;
-      @include button(100%, 65px, #000, #fff)
+      @include button(100%, 4rem, #000, #fff)
     }
   }
 }
