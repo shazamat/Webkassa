@@ -1,0 +1,17 @@
+.partners__content {
+  text-align: center;
+
+  h2 {
+    font-size: 3.125rem;
+    font-weight: 600;
+    padding-bottom: 3.75rem;
+    text-transform: uppercase;
+  }
+
+  &-list {
+    display: flex;
+    gap: 4.125rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

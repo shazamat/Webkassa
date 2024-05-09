@@ -576,6 +576,22 @@ a {
   }
 }
 
+.partners__content {
+  text-align: center;
+}
+.partners__content h2 {
+  font-size: 3.125rem;
+  font-weight: 600;
+  padding-bottom: 3.75rem;
+  text-transform: uppercase;
+}
+.partners__content-list {
+  display: flex;
+  gap: 4.125rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .about__content {
   text-align: center;
   background: #fff;
@@ -592,11 +608,82 @@ a {
   padding-bottom: 5rem;
 }
 
-.about__content-item {
-  width: 28.43rem;
-  height: 20.5rem;
-  background: red;
+.about__content-cart {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .about__content-cart {
+    flex-direction: column;
+  }
+}
+.about__content-cart-item {
+  padding-top: 90px;
+  margin-right: 1.25rem;
+  text-align: center;
+  width: 100%;
+  height: 325px;
+  background: #fff;
   border-radius: var(--border-radius);
+}
+@media (max-width: 767px) {
+  .about__content-cart-item {
+    width: 100%;
+    margin: 0.75rem;
+    height: 205px;
+  }
+}
+.about__content-cart-item h2 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 3.125rem;
+  background: linear-gradient(94.87deg, #E52FB1 53.59%, #4043BC 84.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about__content-cart-item-one {
+  margin-left: 0.625rem;
+}
+.about__content-cart-item-last {
+  margin-left: 0.625rem !important;
+}
+
+.about__content-licence {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.25rem 0.625rem 1.25rem 0.625rem;
+  border-radius: var(--border-radius);
+}
+@media (max-width: 767px) {
+  .about__content-licence {
+    flex-direction: column;
+  }
+}
+.about__content-licence-title {
+  padding: 5rem 0 3.93rem 5rem;
+  text-transform: uppercase;
+  font-size: 2.875rem;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .about__content-licence-title {
+    font-size: 1.5rem;
+    padding: 1.875rem;
+  }
+}
+.about__content-licence-description {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.experience__img {
+  margin: 3.75rem 0.75rem 10rem 0.75rem;
+}
+.experience__img img {
+  width: 100%;
 }
 
 .mobile-overlay {

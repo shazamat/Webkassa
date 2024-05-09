@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,171 +12,257 @@
     <title>Надёжная онлайн-касса</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__inner container">
-                <a class="header__logo logo hidden-mobile">
-                    <img class="logo__image" src="images/logo.svg" alt="" width="78px" height="60px" loading="lazy">
-                </a>
-                <a class="header__logo logo visible-mobile">
-                    <img class="logo__image" src="images/logo-mobile.svg" alt="" width="52px" height="40px" loading="lazy">
-                </a>
-                <nav class="header__menu hidden-mobile">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">Тарифы</a>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__inner container">
+            <a class="header__logo logo hidden-mobile">
+                <img class="logo__image" src="images/logo.svg" alt="" width="78px" height="60px" loading="lazy">
+            </a>
+            <a class="header__logo logo visible-mobile">
+                <img class="logo__image" src="images/logo-mobile.svg" alt="" width="52px" height="40px" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Тарифы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Блог</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Вакансии</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__second">
+                <nav class="header__socials-link hidden-mobile">
+                    <ul class="header__socials-list">
+                        <li class="header__socials-item">
+                            <a href="https://telegram.org/" target="_blank">
+                                <img src="images/telegram.svg" alt="Telegram">
+                            </a>
                         </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">Блог</a>
+                        <li class="header__socials-item">
+                            <a href="https://www.whatsapp.com/" target="_blank">
+                                <img src="images/whatsapp.svg" alt="Whatsapp">
+                            </a>
                         </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">Вакансии</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">Контакты</a>
+                        <li class="header__socials-item">
+                            <a href="https://vk.com/" target="_blank">
+                                <img src="images/vk.svg" alt="VK">
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="header__second">
-                    <nav class="header__socials-link hidden-mobile">
-                        <ul class="header__socials-list">
-                            <li class="header__socials-item">
-                                <a href="https://telegram.org/" target="_blank">
-                                    <img src="images/telegram.svg" alt="Telegram">
-                                </a>
-                            </li>
-                            <li class="header__socials-item">
-                                <a href="https://www.whatsapp.com/" target="_blank">
-                                    <img src="images/whatsapp.svg" alt="Whatsapp">
-                                </a>
-                            </li>
-                            <li class="header__socials-item">
-                                <a href="https://vk.com/" target="_blank">
-                                    <img src="images/vk.svg" alt="VK">
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="header__button connect__button button hidden-mobile">
-                        <a href="#">Подключиться</a>
-                    </button>
-                    <button class="header__button private__button button hidden-mobile">
-                        <a href="#">Личный кабинет</a>
-                    </button>
-                </div>
-                <div class="header__mobile-btn">
-                    <button
-                            class="header__button button burger-button login__button visible-mobile"
-                            type="button"
-                    >
-                        <a href="#">
-                            <img src="images/user.svg" alt="user">
-                        </a>
-                    </button>
-                    <button
-                            class="header__button button burger-button visible-mobile"
-                            type="button"
-                            onclick="mobileOverlay.showModal()"
-                    >
-                        <a href="#">
-                            <img src="images/menu.svg" alt="menu">
-                        </a>
-                    </button>
+                <button class="header__button connect__button button hidden-mobile">
+                    <a href="#">Подключиться</a>
+                </button>
+                <button class="header__button private__button button hidden-mobile">
+                    <a href="#">Личный кабинет</a>
+                </button>
+            </div>
+            <div class="header__mobile-btn">
+                <button
+                        class="header__button button burger-button login__button visible-mobile"
+                        type="button"
+                >
+                    <a href="#">
+                        <img src="images/user.svg" alt="user">
+                    </a>
+                </button>
+                <button
+                        class="header__button button burger-button visible-mobile"
+                        type="button"
+                        onclick="mobileOverlay.showModal()"
+                >
+                    <a href="#">
+                        <img src="images/menu.svg" alt="menu">
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <section class="section container">
+            <div class="section__body">
+                <div class="hero">
+                    <div class="hero__body">
+                        <p class="hero__licence">Webkassa внесена в госреестр под № 900</p>
+                        <h1 class="hero__title">
+                            Надёжная <span>онлайн-касса</span> <br>
+                            для предпринимателей
+                        </h1>
+                        <div class="hero__description">
+                            <p>Неограниченные возможности онлайн кассового аппарата, в вашем мобильном телефоне,
+                                планшете и компьютере.</p>
+                        </div>
+                        <div class="hero__button">
+                            <button class="hero__button-alive button">
+                                <a href="#">Приобрести сейчас</a>
+                            </button>
+                            <button class="hero__button-restart button">
+                                <a href="#">Попробовать бесплатно</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero__image"></div>
                 </div>
             </div>
-        </header>
-        <main class="content">
-            <section class="section container">
-                <div class="section__body">
-                    <div class="hero">
-                        <div class="hero__body">
-                            <p class="hero__licence">Webkassa внесена в госреестр под № 900</p>
-                            <h1 class="hero__title">
-                                Надёжная <span>онлайн-касса</span> <br>
-                                для предпринимателей
-                            </h1>
-                            <div class="hero__description">
-                                <p>Неограниченные возможности онлайн кассового аппарата,  в вашем мобильном телефоне, планшете и компьютере.</p>
-                            </div>
-                            <div class="hero__button">
-                                <button class="hero__button-alive button">
-                                    <a href="#">Приобрести сейчас</a>
-                                </button>
-                                <button class="hero__button-restart button">
-                                    <a href="#">Попробовать бесплатно</a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="hero__image"></div>
+        </section>
+
+        <section class="about__section container">
+            <div class="section__body">
+                <div class="about__content">
+                    <h2 class="about__content-title">О компании</h2>
+                    <p class="about__content-description">
+                        К онлайн-ККМ подключились свыше 120 000 компаний. По всей стране насчитывается более 210 центров
+                        техобслуживания. <br>
+                        Сила нашей компании в качестве разработки, оперативности и высоком сервисе.
+                    </p>
+                </div>
+                <div class="about__content-cart">
+                    <div class="about__content-cart-item about__content-cart-item-one">
+                        <p>На рынке с</p>
+                        <h2>2019</h2>
+                        <p>года</p>
+                    </div>
+                    <div class="about__content-cart-item">
+                        <p>Более</p>
+                        <h2>120 000</h2>
+                        <p>подключённых компаний</p>
+                    </div>
+                    <div class="about__content-cart-item">
+                        <p>Свыше</p>
+                        <h2>105 млрд.</h2>
+                        <p>чеков</p>
+                    </div>
+                    <div class="about__content-cart-item about__content-cart-last">
+                        <p>Более</p>
+                        <h2>210</h2>
+                        <p>центров техобслуживания</p>
                     </div>
                 </div>
-            </section>
-
-            <section class="about__section container">
-                <div class="section__body">
-                    <div class="about__content">
-                        <h2 class="about__content-title">О компании</h2>
-                        <p class="about__content-description">
-                            К онлайн-ККМ подключились свыше 120 000 компаний. По всей стране насчитывается более 210 центров техобслуживания. <br>
-                            Сила нашей компании в качестве разработки, оперативности и высоком сервисе.
-                        </p>
-                    </div>
-                    <div class="about__content-cart">
-                        <div class="about__content-item">
-                            <p>На рынке с</p>
-                            <h2>2019</h2>
-                            <p>года</p>
-                        </div>
+                <div class="about__content-licence">
+                    <h2 class="about__content-licence-title">государственная <br>сертификация</h2>
+                    <div class="about__content-licence-description">
+                        <p>Процедуру проводила уполномоченная КНБ организация. При сертификации на
+                            информбезопасность<br> проверяются:</p>
+                        <ul>
+                            <li>
+                                • исходный код программы,
+                            </li>
+                            <li>
+                                • отсутствие в коде вредоносных компонентов,инфраструктура,
+                            </li>
+                            <li>
+                                • бизнес-процессы компании по обеспечению инфорбезопасности,
+                            </li>
+                            <li>
+                                • проводится нагрузочное тестирование.
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+                <div class="experience__img visible-mobile">
+                    <img src="images/Group%20105.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="partners__content container">
+            <h2>Нам уже доверились</h2>
+            <ul class="partners__content-list">
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/burgerking.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/dns.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/magnit.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/lenta.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/merlin.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/rzd.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/citilink.svg" alt="Burger King">
+                    </a>
+                </li>
+                <li class="partners__content-item">
+                    <a class="partners__content-link">
+                        <img src="images/partners/maxdom.svg" alt="Burger King">
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-        </main>
-    </div>
+    </main>
+</div>
 
-    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-        <form class="mobile-overlay__close-button-wrapper" method="dialog">
-            <button
+<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button
                 class="mobile-overlay__close-button cross-button"
                 type="submit"
-            >
+        >
                 <span class="visible-mobile">
                     <img src="images/Vector%2012.svg" alt="">
                 </span>
-            </button>
-        </form>
-        <div class="mobile-overlay__body">
-            <ul class="menu-overlay__list">
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Тарифы</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Блог</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Вакансии</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Контакты</a>
-                </li>
-            </ul>
-            <div class="second-overlay">
-                <a class="tel" href="tel:84952690001">
-                    8 495 269 00 01
-                </a>
-                <div class="working-day">
-                    <p>ПН-ПТ 9:00 - 19:00</p>
-                    <p>СБ-ВС выходной</p>
-                </div>
-                <div class="address">
-                    <a href="mailto:info@chekonline.ru">info@chekonline.ru</a>
-                    <p>119590, Москва,</p>
-                    <p>Минская улица 2Ж, офис 203.</p>
-                </div>
+        </button>
+    </form>
+    <div class="mobile-overlay__body">
+        <ul class="menu-overlay__list">
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Тарифы</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Блог</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Вакансии</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Контакты</a>
+            </li>
+        </ul>
+        <div class="second-overlay">
+            <a class="tel" href="tel:84952690001">
+                8 495 269 00 01
+            </a>
+            <div class="working-day">
+                <p>ПН-ПТ 9:00 - 19:00</p>
+                <p>СБ-ВС выходной</p>
             </div>
-
+            <div class="address">
+                <a href="mailto:info@chekonline.ru">info@chekonline.ru</a>
+                <p>119590, Москва,</p>
+                <p>Минская улица 2Ж, офис 203.</p>
+            </div>
         </div>
-    </dialog>
-    <script src="script/index.js"></script>
+
+    </div>
+</dialog>
+<script src="script/index.js"></script>
 </body>
 </html>
